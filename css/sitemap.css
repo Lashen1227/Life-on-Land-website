@@ -1,0 +1,67 @@
+
+/* Background image settings */
+.map_body{
+    background-image: url(../resources/images/sitemap/banner7.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    backdrop-filter: blur(100%);  /* Apply backdrop filter for blur effect */
+    filter: blur(0.5px);
+}
+
+/* Styles for the map container */
+#map{
+    width: 100%;
+    height: 600px;
+}
+  
+/* Styles for hover effect on map elements */
+#map g:hover text{
+    fill:#000000;
+    font-weight: bold;
+}
+
+#map g:hover rect{
+    fill: rgb(0, 255, 179);  /* Change fill color of rectangle on hover */
+    stroke:#ffffff;  /* Add stroke color to rectangle on hover */
+    stroke-width: 5px;  /* Set stroke width for rectangle on hover */
+}
+  
+/* Styles for the header section of the sitemap page */
+.sitehead{
+    width: 100%;
+    height: 50%;
+    margin-top: 5rem;
+}
+
+.sitehead h2{
+    font-size: 40px;
+    color: var(--theme-white);
+    margin-left: 710px;
+}
+
+/* Media queries for responsiveness */
+@media screen and (max-width: 768px) {
+    /* Adjust heading font size and margin for even smaller screens */
+    .sitehead h2 {
+        font-size: 30px;
+        margin-left: 20px;
+    }
+    /* Adjust map height for even smaller screens */
+    #map{
+        height: 500px;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    /* Further adjust heading font size and margin for even smaller screens */
+    .sitehead h2 {
+        font-size: 20px;
+        margin-left: 10px;
+    }
+    /* Further adjust map height for even smaller screens */
+    #map{
+        height: 400px;
+    }
+}

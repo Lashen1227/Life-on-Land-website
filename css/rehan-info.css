@@ -1,0 +1,83 @@
+
+/* Styles for the container element */
+.container{
+    width:45%
+}
+
+/* Styles for the h1 element */
+h1{
+    font-size: 2.5rem;
+    color: var(--theme-green);
+}
+
+
+/* Styles for the contribute class */
+.contribute{
+    width: 96%;
+    height: 100%;
+    border-radius: 20px;
+    padding: 5%;
+    margin: 2% 0;  /* Set margin to 2% on top and bottom, 0 on left and right */
+    backdrop-filter: blur(5px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    cursor: default;
+    background-size: cover;
+    background-color: var(--theme-table);
+    color: rgb(223, 212, 212);
+}
+
+
+/* Styles for the img element */
+img{
+    width: 30%;
+    height: 30%;
+    border-radius: 2.5%;
+    padding-left: 50px;
+ 
+    
+}
+
+/* Styles for the name class */
+.name  {
+   
+    padding-left: 250px;
+    position: absolute;
+    top: 80px;
+    padding-bottom: 20px;
+}
+
+/* Styles for the student class */
+.student{
+    padding-left: 250px;
+    position: absolute;
+    top: 120px;
+
+}
+.play{
+    padding-top:30px;
+}
+
+.contribute li a{
+    align-items: start;
+    justify-content: start;
+}
+
+
+.name{
+    margin-top: 1%;
+    font-size: 1.5rem;
+}
+
+.student{
+    color: rgb(40, 198, 219);
+    margin-top: 1%;
+    font-size: 1.2rem;
+}
+
+.play{
+    color: #fff;
+    margin-top: 1%;
+    font-size: 1.5rem;
+}

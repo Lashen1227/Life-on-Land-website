@@ -1,0 +1,349 @@
+/* ========CART ICON AND COUNT ======== */
+
+
+.shopingCart{
+    display: flex;
+    margin-top: 10vh;
+    justify-content: right;
+    margin-right: 5%;
+}
+.cart-image{
+    width: 50px;
+  }
+.shopingCart .icon-cart{
+    position: relative;
+  }
+
+.shopingCart .icon-cart :hover{
+    scale: 1.05 !important;
+    transition: 0.1s;
+  }
+
+.shopingCart .icon-cart span{
+    display: flex;
+    width: 25px;
+    height: 25px;
+    background-color: red;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    position: absolute;
+    top: 52%;
+    right: -15%;
+  }
+
+/* =============SHOP SECTION=============== */
+
+.shop{
+    margin-top: -10vh;
+}
+.shop-title{
+    color: white;
+    font-size: 28px;
+    text-align: center;
+    margin-bottom: 5vh;
+ }
+.titleRow{
+    height: 80px;
+}
+.product-title{
+    font-size: 22px;
+    color: black;
+}
+.product-box{
+    width: 200px;
+    min-width: 200px;
+    background-color: antiquewhite;
+    padding: 15px;
+    border-radius: 20px;
+    text-align: center;
+    color: black;
+}
+.product-box:hover{
+    transition: 0.1s;
+    scale: 1.03 !important;
+    backdrop-filter: blur(var(--theme-blur));
+}
+.product-image{
+    width:100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 15px;
+}
+
+.shop-content{
+    display: grid;
+    min-height: 100vh;
+    justify-items: center;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 15px;
+}
+.addCard{
+    background-color: brown;
+    color: white;
+    padding: 10px 17px;
+    border-radius: 24px;
+    margin-top: 10px;
+    border: none;
+    cursor: pointer;
+    font-size: 17px;
+    margin-bottom: 10px;
+}
+
+/* =============Set deferent background colors for item cards================ */
+.item1{
+    background-image: linear-gradient(#E9C990,#FFBCB2);
+}
+.item2{
+    background-image: linear-gradient(#c5f2fd,#929aef);
+}
+.item3{
+    background-image: linear-gradient(#fefff0, #efb992);
+}
+.item4{
+    background-image: linear-gradient(#fefff7, #ef9292);
+}
+.item5{
+    background-image: linear-gradient(#fffae5, #ff996d);
+}
+.item6{
+    background-image: linear-gradient(#f9fff7, #96d2f8);
+}
+.item7{
+    background-image: linear-gradient(#fff7e9, #ec8983);
+}
+.item8{
+    background-image: linear-gradient(rgb(246 233 255), rgb(168 131 236));
+}
+.item9{
+    background-image: linear-gradient(#dcd3c0, #decaa1);
+}
+.item10{
+    background-image: linear-gradient(#dcd3c0, #dca96b);
+}
+
+/* ============= Set deferent background colors and hover effects for add cart button ================ */
+
+/*================item1===============*/
+.item1 .addCard{
+    background-color: #520404;
+}
+.item1 .addCard:hover{
+    background-color: #340303;
+    transition: 0.1s;
+    scale: 1.1 !important;
+}
+/*================item2===============*/
+.item2 .addCard{
+    background-color: #1d0452;
+}
+.item2 .addCard:hover{
+    background-color: #0f012d;
+    transition: 0.1s;
+    scale: 1.1 !important;
+}
+/*================item3===============*/
+.item3 .addCard{
+    background-color: #432603;
+}
+.item3 .addCard:hover{
+    background-color: #242b01;
+    transition: 0.1s;
+    scale: 1.1 !important;
+}
+/*================item4===============*/
+.item4 .addCard{
+    background-color: #430303;
+}
+.item4 .addCard:hover{
+    background-color: #240101;
+    transition: 0.1s;
+    scale: 1.1 !important;
+}
+/*================item5===============*/
+.item5 .addCard{
+    background-color: #46040a;
+}
+.item5 .addCard:hover{
+    background-color: #240101;
+    transition: 0.1s;
+    scale: 1.1 !important;
+}
+/*================item6===============*/
+.item6 .addCard{
+    background-color: #033243;
+}
+.item6 .addCard:hover{
+    background-color: #011a24;
+    transition: 0.1s;
+    scale: 1.1 !important;
+}
+/*================item7===============*/
+.item7 .addCard{
+    background-color: #430303;
+}
+.item7 .addCard:hover{
+    background-color: #240101;
+    transition: 0.1s;
+    scale: 1.1 !important;
+}
+/*================item8===============*/
+.item8 .addCard{
+    background-color: #430337;
+}
+.item8 .addCard:hover{
+    background-color: #240101;
+    transition: 0.1s;
+    scale: 1.1 !important;
+}
+/*================item9===============*/
+.item9 .addCard{
+    background-color: #5d4401;
+}
+.item9 .addCard:hover{
+    background-color: #2c2000;
+    transition: 0.1s;
+    scale: 1.1 !important;
+}
+/*================item10===============*/
+.item10 .addCard{
+    background-color: #483202;
+}
+.item10 .addCard:hover{
+    background-color: #2c2000;
+    transition: 0.1s;
+    scale: 1.1 !important;
+}
+
+
+/*===================CART===================*/
+.cart{
+    position: fixed;
+    top: 0;
+    /* right: 2vh; */
+    right: -100%;
+    margin-top: 9vh;
+    width: 400px;
+    height: 70vh;
+    overflow-y: auto;
+    overflow-x: hidden;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.728);
+    backdrop-filter: blur(var(--theme-blur));
+    --theme-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.708); /* use like -> box-shadow: var(--theme-shadow); */
+    border: 2px solid green;
+    transition: 0.5s;
+}
+.cart.active{
+    right: 2vh;
+    transition: 0.5s;
+}
+.cart-title{
+    text-align: center;
+    color:rgb(75, 255, 72) ;
+}
+.cart-img{
+    width: 100px;
+    height: 100px;
+    object-fit: contain;
+    padding: 10px;
+}
+.trash-icon{
+    width: 24px;
+    cursor: pointer;
+}
+.cart-box{
+    display: grid;
+    grid-template-columns: 32% 50% 18%;
+    align-items: center;
+    gap: 1rem;
+    margin-top: 1rem;
+}
+.detail-box{
+    display: grid;
+    row-gap: .5rem;
+}
+.class-product-title{
+    font-size: 1rem;
+}
+.cart-price{
+    font-weight: 500;
+}
+.cart-quantity{
+    border: 1px solid rgb(246, 255, 0);
+    width: 2.4rem;
+    text-align: center;
+    font-size: 1rem ;
+}
+.total{
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 1.5rem;
+    border-top: 1px solid rgb(0, 255, 51);
+}
+.total-title{
+    font-size: 1rem;
+    font-weight: 600;
+}
+.total-price{
+    margin-left: 0.5rem;
+}
+#cart_empyty_text{
+    font-size: larger;
+    text-align: center;
+}
+
+
+
+/*====styles for close and checkout button====*/
+.cart .btn{
+    margin-top: 1rem;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    height: 8vh;
+
+  }
+.cart .btn button{
+    background-color: rgb(214, 167, 15);
+
+    border: none;
+    font-family: Poppins;
+    font-weight: 600;
+    cursor: pointer;
+    color: white;
+}
+
+.cart .btn .checkOut:hover{
+    background-color: rgb(14, 189, 43);
+    color: black;
+}
+  
+.cart .btn .close{
+    background-color: rgb(255, 254, 199);
+    color: black;
+}
+
+.cart .btn .close:hover{
+    background-color: #f60000;
+    color: white;
+}
+
+
+ /* Media queries to adjust columns based on viewport width */
+@media (max-width: 1200px) {
+    .shop-content {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media (max-width: 900px) {
+    .shop-content {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 600px) {
+    .shop-content {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}

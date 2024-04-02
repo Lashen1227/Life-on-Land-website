@@ -1,0 +1,166 @@
+.article1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;  
+    width: 50%;
+    margin: 60px auto;
+    padding-bottom: 40px;
+    background-color: var(--theme-table);
+    border-radius: 30px;
+    color: var(--theme-green);
+}
+
+.title {
+    text-align: center;
+    width: 100%;
+    padding: 20px 0;
+    margin: 0;
+    color: var(--theme-green);
+    background-color: var(--theme-bg);
+    font-size: 35px;
+}
+
+.navigation{
+    display: inline;
+    text-align: center;
+    margin-left: 65px;
+}
+
+.details {
+    width: 100%;
+    text-align: center;
+    color: var(--theme-white);
+    font-size: 20px;
+    line-height: 0.5;
+}
+
+div.subtopics {
+    width: 100%;
+    margin: 0;
+    font-size: 17px;
+    line-height: 1.2;
+    color: var(--theme-white);
+}
+
+.title_intro {
+    width: 90%;
+    margin: 60px auto;
+    font-size: 18px;
+    line-height: 1.5;
+    text-align: justify;
+    color: var(--theme-white);
+}
+
+.intro {
+    width: 90%;
+    margin: 50px 0;
+    font-size: 18px;
+    line-height: 1.5;
+    text-align: justify;
+    color: var(--theme-white);
+}
+
+.intro p {
+    width: 90%;
+    margin: 20px auto;
+    font-size: 18px;
+    line-height: 1.5;
+    text-align: justify;
+    color: var(--theme-white);
+}
+
+.subtopics ul li {
+    color: var(--theme-white);
+    width: 100%;
+    padding: 0;
+    font-size: 20px;
+}
+
+.subtopics ul li a {
+    width: 100%;
+    padding: 0 !important;
+    margin: 0 !important;
+    display: flex;
+    align-items: start;  /* aligns the text to the left */
+    justify-content: start;
+}
+
+/* Responsive Media Queries */
+/* For screens smaller than 1200px */
+@media screen and (max-width: 1200px) {
+    .article1 {
+        width: 70%;
+        margin: 50px auto;
+    }
+    .title {
+        font-size: 30px;
+    }
+    .details {
+        font-size: 18px;
+    }
+    .subtopics {
+        font-size: 15px;
+    }
+    .title_intro,
+    .intro,
+    .intro p {
+        width: 100%;
+        margin: 30px auto;
+        font-size: 16px;
+    }
+    .subtopics ul li {
+        font-size: 16px;
+    }
+}
+
+/* For screens smaller than 768px */
+@media screen and (max-width: 768px) {
+    .article1 {
+        width: 90%;
+        margin: 30px auto;
+    }
+    .title {
+        font-size: 30px;
+    }
+    .navigation {
+        margin-left: 0;
+    }
+    .details {
+        font-size: 18px;
+    }
+    .subtopics {
+        font-size: 15px;
+    }
+    .title_intro,
+    .intro,
+    .intro p {
+        width: 100%;
+        margin: 30px auto;
+        font-size: 16px;
+    }
+    .subtopics ul li {
+        font-size: 16px;
+    }
+}
+
+/* For screens smaller than 480px */
+@media screen and (max-width: 480px) {
+    .title {
+        font-size: 25px;
+    }
+    .details {
+        font-size: 16px;
+    }
+    .subtopics {
+        font-size: 14px;
+    }
+    .title_intro,
+    .intro,
+    .intro p {
+        font-size: 14px;
+    }
+    .subtopics ul li {
+        font-size: 14px;
+    }
+}

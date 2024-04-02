@@ -1,0 +1,70 @@
+h2{
+    text-align: center;
+    margin-top: 40px;
+    font-size: 40px;
+}
+
+.question{
+    text-align: center;
+    font-size: 40px;
+    color: green;
+}
+
+/* Add your CSS styles here */
+#progress-indicator {
+    margin-top: 20px;
+}
+
+#progress-bar {
+    width: 0%;
+    height: 20px;
+    background-color: #4CAF50;
+}
+
+#progress-percent {
+    margin-top: 5px;
+}
+
+#prompt-container {
+    margin-top: 20px;
+}
+
+#prompt {
+    border: 2px solid green;
+    padding: 85px;
+    width: 28%;
+    border-radius: 20px;
+    margin: auto;
+}
+
+#basic-info{
+    margin-left: 600px;
+    text-align: center;
+    width: 28%;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 18.5px;
+    background-color: var(--theme-table);
+    border-radius: 40px;
+}
+
+@media screen and (max-width: 600px) {
+    #basic-info {
+        margin-left: 0;
+        width: 100%;
+    }  
+    #prompt {
+        width: 100%;
+    }
+    #progress-bar {
+        width: 4%;
+    }
+    #progress-percent {
+        text-align: center;
+    }
+    #progress-indicator {
+        text-align: center;
+    }
+    #prompt-container {
+        margin-top: 20px;
+    }
+}

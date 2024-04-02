@@ -1,0 +1,210 @@
+/* Add fade-in and fade-out animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes fadeOut {
+    from {
+        opacity: 1;
+    }
+    to {
+        opacity: 0;
+    }
+}
+.splsh-container{
+    width: 100vh;
+    width: 100%;
+}
+.title{
+   font-size: 66px; 
+   color: rgb(16, 198, 16);
+   margin-left: 50vh;
+   margin-top: 5%;
+   margin-bottom: 10px;
+   font-family: Poppins;
+   position: relative;
+   opacity: 0; /* Initial opacity set to 0 for fade-in effect */
+   animation: fadeIn 2s forwards; /* Fade-in animation */
+}
+.logo_vision{
+    display: grid;
+    grid-template-columns:repeat(2,1fr);
+}
+.splash-logo{
+    position: absolute;
+    top: 165px;
+    left: 290px;
+    width: 400px;
+    /* margin-top: -20px;
+    padding-left: 40vh; */
+    opacity: 0; /* Initial opacity set to 0 for fade-in effect */
+    animation: fadeIn 2s forwards; /* Fade-in animation */
+}
+
+.vision p{
+    position: absolute;
+    top: 195px;
+    left: 650px;
+    font-family: poppins;
+    font-size: 40px;
+    font-weight: 500;
+    margin-top: 10px;
+ /*    padding-right: 10vh;
+    margin-left: -10vh; */
+    opacity: 0; /* Initial opacity set to 0 for fade-in effect */
+    animation: fadeIn 2s forwards; /* Fade-in animation */
+}
+.breaker{
+    margin:auto;
+    width: 1000px;
+    margin-top: 300px;
+}
+
+.developer_title h3{
+    text-align: center;
+    font-weight: 400;
+    font-size: 26px;
+    font-family: Poppins;
+}
+.developer_images{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    justify-items: center;
+    padding: 0 350px;
+    margin-top: 30px;
+}
+
+.developer_images img{
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 3px solid greenyellow;
+}
+.developer_images img:hover{
+    transition: 0.1s;
+    scale: 1.1 !important;
+}
+.developer_names{
+    display: grid;
+    grid-template-columns:repeat(4,1fr);
+    justify-items: center;
+    padding: 0 350px;
+    margin-top: -10px;
+}
+.developer_names h4{
+    font-weight: 300;
+    font-size: 20px;
+    font-style: italic;
+}
+.developer_names span{
+    font-size: 24px;
+    font-weight: bold;
+    font-style: normal;
+}
+.animation-image{
+    position: fixed;
+    top: 160px;
+    left: 30px;
+}
+.animation-image img{
+    width: 300px;
+}
+
+/* Animation for logo and title */
+.logo-animation {
+    filter: blur(0px);
+    transition: all 3s ease-in-out; /* 3s delay */
+}
+
+.title.title-animation {
+    opacity: 1;
+    transition: all 3s ease-in-out; /* 3s delay */
+}
+
+/* Animation for fade-out */
+.fade-out {
+    animation: fadeOut 2s forwards; /* Fade-out animation */
+}
+
+/* Media Queries */
+@media (max-width: 992px) {
+    .title {
+        font-size: 54px;
+    }
+    .splash-logo {
+        width: 350px;
+    }
+    .vision p {
+        font-size: 36px;
+    }
+    .breaker {
+        max-width: 95%;
+    }
+    .developer_images,
+    .developer_names {
+        padding: 0 5%;
+    }
+}
+
+@media (max-width: 768px) {
+    .title {
+        font-size: 48px;
+    }
+    .splash-logo {
+        width: 300px;
+    }
+    .vision p {
+        font-size: 30px;
+    }
+    .breaker {
+        max-width: 90%;
+    }
+    .developer_images,
+    .developer_names {
+        padding: 0 2%;
+    }
+}
+
+@media (max-width: 576px) {
+    .title {
+        font-size: 36px;
+    }
+    .splash-logo {
+        width: 200px;
+    }
+    .vision p {
+        font-size: 24px;
+    }
+    .breaker {
+        max-width: 80%;
+    }
+    .developer_images,
+    .developer_names {
+        padding: 0;
+    }
+}
+
+@media (max-width: 400px) {
+    .title {
+        font-size: 30px;
+    }
+    .splash-logo {
+        width: 150px;
+    }
+    .vision p {
+        font-size: 20px;
+    }
+    .breaker {
+        max-width: 75%;
+    }
+    .developer_images,
+    .developer_names {
+        padding: 0;
+    }
+}

@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="css/style.css"/>
+	<link rel="stylesheet" href="css/cursor.css"/>
+    <!--Link Cart css-->
+    <link rel="stylesheet" href="css/shop.css">
+	<!-- Fonts & Logos -->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700;0,900;1,300;1,400;1,500;1,700;1,900&display=swap">
+	<link rel="icon" type="image/svg" href="resources/logos/favicon.svg">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@48,400,0,0">
+</head>
+
+<body>
+    <!-- Navigation bar of the Document -->
+    <nav>
+        <ul id="navbar">
+            <li id="logo" style="float:left"><a href="index.html"><img src="resources/logos/logo.svg" alt="logo"></a></li>
+			<li><a href="home.html"><span class="material-symbols-rounded">home</span><span class="nav__text">Home</span></a></li>
+			<li><a href="gallery.html"><span class="material-symbols-rounded">movie</span><span class="nav__text">Gallery</span></a></li>
+			<li><a href="shop.html" class="active"><span class="material-symbols-rounded">shop</span><span class="nav__text">Shop</span></a></li>
+			<li><a href="profile.html"><span class="material-symbols-rounded">account_circle</span><span class="nav__text">Profile</span></a></li>
+			<li><a href="sitemap.html"><span class="material-symbols-rounded">lan</span><span class="nav__text">Sitemap</span></a></li>
+			<li><a href="feedback.html"><span class="material-symbols-rounded">chat</span><span class="nav__text">Comments</span></a></li>
+			<li><a href="team.html"><span class="material-symbols-rounded">info</span><span class="nav__text">About Us</span></a></li> 
+        </ul>
+    </nav>
+	
+
+    
+    <!-- Main Content of the Document -->
+	
+	<!-- ================StorePage Starts here======================-->
+	
+    <!--CART SECTION-->
+    <div class="shopingCart">
+		<div class="cursor rounded move" id="cursor"></div>  <!-- Cursor of the Document -->
+        <div class="icon-cart">
+            <img src="resources/images/cartImages/cart_icon.png" alt="cartImage" class="cart-image" id="showCart">
+            <span id="cartCount">0</span>
+        </div>
+		<div class="cart">
+			<h2 class="cart-title">Your Cart</h2>
+
+			<!--CONTENT OF CART-->
+			<div class="cart-content">
+				<!--TEST BOX-->
+				<div id="cart_empyty_text" style="display: block;">Your cart is empty</div>
+			</div>
+			<!--TOTAL-->
+			<div class="total">
+				<div class="total-title">Total</div>
+				<div class="total-price">$0</div>
+			</div>
+
+			<!--close and buy button-->
+			<div class="btn">
+				<button class="close" id="cart-close">CLOSE</button>
+				<button class="checkOut" onclick="goToCheckout()">CHECK OUT</button>
+			</div>
+		</div>
+    </div>
+
+    <!--SHOP SECTION-->
+    <section class="shop container">
+        <h2 class="shop-title">Our Products</h2>
+
+        <!--ITEMS-->
+        <div class="shop-content">
+            <!--Item 01-->
+            <div class="product-box item1">
+                <img src="resources/images/cartImages/basket.png" alt="basketImage" class="product-image">
+                <div class="titleRow">
+                    <h2 class="product-title">Handmade Wooden Basket</h2>
+                </div>
+                <div class="product-price">$35</div>
+                <button class="addCard">Add to cart</button>
+            </div>
+            <!--Item 02-->
+            <div class="product-box item2">
+				<img src="resources/images/cartImages/seed.png" alt="basketImage" class="product-image">
+                <div class="titleRow">
+                    <h2 class="product-title">Sun Flower Seeds</h2>
+                </div>
+				<div class="product-price">$25</div>
+				<button class="addCard">Add to cart</button>
+			</div>
+            <!--Item 03-->
+			<div class="product-box item3">
+				<img src="resources/images/cartImages/product11.png" alt="basketImage" class="product-image">
+                <div class="titleRow">
+                    <h2 class="product-title">Card Board Gift Box</h2>
+                </div>
+				<div class="product-price">$20</div>
+				<button class="addCard">Add to cart</button>
+			</div>
+            <!--Item 04-->
+			<div class="product-box item4">
+				<img src="resources/images/cartImages/product7.jpeg" alt="basketImage" class="product-image">
+                <div class="titleRow">
+                    <h2 class="product-title">Moose Key-Tag leather</h2>
+                </div>
+				<div class="product-price">$15</div>
+				<button class="addCard">Add to cart</button>
+			</div>
+            <!--Item 05-->
+			<div class="product-box item5">
+				<img src="resources/images/cartImages/product3.jpeg" alt="basketImage" class="product-image">
+                <div class="titleRow">
+                    <h2 class="product-title">Woodland Pinecone Figurine</h2>
+                </div>
+				<div class="product-price">$25</div>
+				<button class="addCard">Add to cart</button>
+			</div>
+            <!--Item 06-->
+			<div class="product-box item6">
+				<img src="resources/images/cartImages/product8.jpg" alt="basketImage" class="product-image">
+                <div class="titleRow">
+                    <h2 class="product-title">Handmade Bracelet</h2>
+                </div>
+				<div class="product-price">$15</div>
+				<button class="addCard">Add to cart</button>
+			</div>
+            <!--Item 07-->
+			<div class="product-box item7">
+				<img src="resources/images/cartImages/product2.jpg" alt="basketImage" class="product-image">
+                <div class="titleRow">
+                    <h2 class="product-title">Coconut Shell Carving</h2>
+                </div>
+				<div class="product-price">$40</div>
+				<button class="addCard">Add to cart</button>
+			</div>
+            <!--Item 08-->
+			<div class="product-box item8">
+				<img src="resources/images/cartImages/product6.jpeg" alt="basketImage" class="product-image">
+                <div class="titleRow">
+                    <h2 class="product-title">Handmade Pendant</h2>
+                </div>
+				<div class="product-price">$20</div>
+				<button class="addCard">Add to cart</button>
+			</div>
+            <!--Item 09-->
+			<div class="product-box item9">
+				<img src="resources/images/cartImages/product9.jpeg" alt="basketImage" class="product-image">
+                <div class="titleRow">
+                    <h2 class="product-title">Natural Cloth Bag</h2>
+                </div>
+				<div class="product-price">$30</div>
+				<button class="addCard">Add to cart</button>
+			</div>
+            <!--Item 10-->
+			<div class="product-box item10">
+				<img src="resources/images/cartImages/product1.jpeg" alt="basketImage" class="product-image">
+                <div class="titleRow">
+                    <h2 class="product-title">DIY Desktop Organizer</h2>
+                </div>
+				<div class="product-price">$40</div>
+				<button class="addCard">Add to cart</button>
+			</div>
+
+        </div>
+    </section>
+	
+	<!--================ end of store StorePage ====================-->
+
+	
+	
+	
+	
+
+    <!-- Footer Section of the Document -->
+	<div id="footer">
+		<div class="footer__container">
+			<div class="animate" id="dev">
+				<a href="subpages/nawoda-info.html"><img src="resources/images/developers/nawoda.jpg" alt="Lashen Martino"><span>Nawoda Silva (Contributor)</span></a>
+			</div>
+			<div class="footer__container__left">
+				<h3>Life on Land</h3>
+				<p>&copy; Life on Land is a collaborative website built by a group of students from IIT - 2024</p>
+			</div>
+			<div class="footer__container__right">
+				<h3>Contact Us</h3>
+				<ul>
+					<li><a href="mailto:lashenmartino@gmail.com">Email</a></li>
+					<li><a href="https://www.facebook.com/lashen.martino">Facebook</a></li>
+                    <li><a href="https://twitter.com/LashenMartino?s=09">Twiter</a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+
+	<!-- JavaScript files -->
+	<!--Link JavaScript shoping cart-->
+	<script src="js/shop.js"></script>
+	<script src="js/cursor.js"></Script>
+	
+	
+
+</body>
+
+</html>
+

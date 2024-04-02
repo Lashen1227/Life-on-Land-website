@@ -1,0 +1,137 @@
+
+.photoWrapperMain{
+    /* background-image:url('/src/ibG1tbs.jpg'); */
+    background: rgb(0,0,0);
+    background: radial-gradient(circle, rgba(0,0,0,0.9523459041819853) 0%, rgba(40,40,40,1) 100%, rgba(0,0,0,1) 100%);
+    height: 100vh;
+    width: 100%;
+    /* background-color: blue; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.imageContaner {
+    border-radius: 20px;
+    display: flex;
+    height: 500px;
+    width: 300px;
+    overflow: hidden;
+    justify-content: center;
+    transition-timing-function: ease;
+    transition-duration: 500ms;
+    transition-property: all;
+    position: relative;
+}
+
+.imageContaner:hover {
+    transform: translateY(10px);
+}
+
+.devImage {
+    /* z-index: 2; */
+    height:100%;
+    transition-timing-function: ease;
+    transition-duration: 500ms;
+    transition-property: all;
+}
+
+.photoWrapper{
+    /* background-color: bisque; */
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
+
+}
+.details2{
+    color: white;
+    position: absolute;
+    bottom:-40px;
+    width:100%;
+    height: 100%;
+    display: flex;
+    background: linear-gradient(360deg, rgba(0,0,0,1) 10%, rgba(0,212,255,0) 100%);
+    opacity: 0%;
+    z-index:1;
+    transition-property: all;
+    transition-timing-function: ease-out;
+    transition-duration: 400ms;
+    flex-direction: column;
+    justify-content: end;
+    align-items: center;
+}
+.details2:hover{
+    opacity: 100%;
+    bottom:0px;
+}
+
+.devName{
+    font-family: monospace;
+    align-self: start;
+    margin-left: 10px;
+    font-size: 30px;
+    margin-bottom:10px;
+}
+.devDes{
+    /* background-color: burlywood; */
+    font-family: monospace;
+    font-size: 15px;
+    display: flex;
+    text-wrap:wrap;
+    width:280px;
+    padding-bottom: 40px;
+}
+
+/* Media Queries */
+@media (max-width: 1024px) {
+    .photoWrapper{
+        flex-direction: column;
+        gap: 20px;
+    }
+    .imageContaner {
+        width: 100px;
+        height: 150px;
+    }
+    .devName{
+        font-size: 10px;
+    }
+    .devDes{
+        font-size: 5px;
+    }
+}
+
+@media (max-width: 768px) {
+    .photoWrapper{
+        flex-direction: column;
+        gap: 20px;
+    }
+    .imageContaner {
+        width: 100px;
+        height: 150px;
+    }
+    .devName{
+        font-size: 10px;
+    }
+    .devDes{
+        font-size: 5px;
+    }
+}
+
+@media (max-width: 425px) {
+    .photoWrapper{
+        flex-direction: column;
+        gap: 20px;
+    }
+    .imageContaner {
+        width: 100px;
+        height: 150px;
+    }
+    .devName{
+        font-size: 10px;
+    }
+    .devDes{
+        font-size: 5px;
+    }
+}
+
+/* Path: css/team.css */
+

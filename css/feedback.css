@@ -1,0 +1,220 @@
+/* Form elements */
+.form__container{
+    margin: 5% 0;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.form__bg{
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+    padding: 5%;
+    background-color: var(--theme-bg-trans);
+    backdrop-filter: blur(5px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    z-index: 2;
+    cursor: default;
+}
+
+/* Form text area elements */
+textarea, #name, #email{
+    width: 100%;
+    min-height: 10px;
+    border-radius: 20px;
+    border: #08812cd8 3px solid;
+    background-color: var(--theme-black);
+    color: var(--theme-white);
+    margin: 10px 0px;
+    resize: none;  /* Disable the resize property */
+    transition: all 0.3s ease-in-out;
+}
+
+textarea, #name, #email{
+    padding:5%;
+    width: 90%;
+}
+
+textarea:focus, #name:focus,#email:focus , .container select:focus{
+    outline: none;
+    border: #08812cd8 3px solid;
+}
+
+textarea::placeholder, #name::placeholder, #email::placeholder{
+    color: var(--theme-green);
+}
+
+textarea:hover, #name:hover, #email:hover, .container select:hover{
+    border: #2e4f4f 3px solid;
+    transition: all 0.3s ease-in-out;
+}
+
+
+
+/* Form radio button elements */
+input[type=radio]{
+    height: 1.5rem;
+    width: 1.5rem;
+    cursor: pointer;
+}
+
+.rating{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin: 1rem 1rem;
+    width: 100%;
+}
+
+.radio_class{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin: 1rem 1rem;
+    width: 14%;
+}
+
+.radio__box{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.radio__box label{
+    margin: 0.5rem 0;  /* Top and bottom margin */
+}
+
+.radio__box input[type=radio]:checked ~ label{
+    color: #08812cd8;
+    font-weight: bold;
+}
+
+/* Form select elements */
+.container select{
+    width: 100%;
+    border-radius: 20px;
+    border: #08812cd8 3px solid;
+    background-color: var(--theme-black);
+    color: var(--theme-white);
+    padding: 20px;
+    margin: 10px 0px;
+    transition: all 0.3s ease-in-out;
+    font-size: 1em;
+    cursor: pointer;
+}
+
+/* Star mark for required fields */
+.star{
+    color: red;
+}
+
+/* Form comment */
+.comment{
+    font-size: 15px;
+}
+
+/* Form submit and reset buttons */
+#line1{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-left: 17%;
+}
+
+input[type=submit], input[type=reset]{
+    border-radius: 20px;
+    width: 150px;
+    padding: 20px;
+    margin: 10px 10px;
+    transition: all 0.3s ease-in-out;
+    font-size: 1em;
+    cursor: pointer;
+}
+
+input[type=submit]{
+    background-color: var(--theme-black);
+    border: #0e8888 3px solid;
+    color: var(--theme-white);
+}
+
+input[type=submit]:hover{
+    border: #00f0f0 3px solid;
+    transition: all 0.3s ease-in-out;
+}
+
+input[type=reset]{
+    background-color: var(--theme-black);
+    border: #0e8888 3px solid;
+    color: var(--theme-white);
+}
+
+input[type=reset]:hover{
+    border: #00f0f0 3px solid;
+    transition: all 0.3s ease-in-out;
+}
+
+input[type=button]{
+    background-color: var(--theme-black);
+    width: 150px;
+    height: 50px;
+    border-radius: 20px;
+    border: #0e8888 3px solid;
+    color: var(--theme-white);
+    cursor: pointer;
+}
+
+input[type=button]:hover{
+    border: #00f0f0 3px solid;
+    transition: all 0.3s ease-in-out;
+}
+
+
+/* Preview feedback */
+.modal-content{
+    width: 80%;
+    height: 50%;
+    border-radius: 20px;
+    padding: 5%;
+    background-color: var(--theme-bg-trans);
+    backdrop-filter: blur(var(--theme-blur));
+    color: var(--theme-white);
+    font-size: 15px;
+    font-family: 'Times New Roman', Times, serif;
+    display: flex;  /* Align the content in a row */
+    flex-direction: column;  /* Align the content in a column */
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin-left: 5%;
+}
+
+/* Media queries */
+@media only screen and (max-width: 1500px) {
+    .container{
+        width: 50%;
+    }
+}
+
+@media only screen and (max-width: 1200px) {
+    .container{
+        width: 60%;
+    }
+}
+
+@media only screen and (max-width: 800px) {
+    .container{
+        width: 90%;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .container{
+        width: 100%;
+    }
+}

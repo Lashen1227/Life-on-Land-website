@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery</title>
+    <link rel="stylesheet" href="css/style.css"/>
+	<link rel="stylesheet" href="css/cursor.css"/>
+	<link rel="stylesheet" href="css/gallery.css"/>
+
+	<!-- Fonts & Logos -->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700;0,900;1,300;1,400;1,500;1,700;1,900&display=swap">
+	<link rel="icon" type="image/svg" href="resources/logos/favicon.svg">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@48,400,0,0">
+	
+	<!--Google fonts-->
+	<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap"rel="gallery.css">
+</head>
+
+<body>
+    <!-- Navigation bar of the Document -->
+    <nav>
+        <ul id="navbar">
+            <li id="logo" style="float:left"><a href="index.html"><img src="resources/logos/logo.svg" alt="logo"></a></li>
+			<li><a href="home.html" ><span class="material-symbols-rounded">home</span><span class="nav__text">Home</span></a></li>
+			<li><a href="gallery.html" class="active"><span class="material-symbols-rounded">movie</span><span class="nav__text">Gallery</span></a></li>
+			<li><a href="shop.html"><span class="material-symbols-rounded">shop</span><span class="nav__text">Shop</span></a></li>
+			<li><a href="profile.html"><span class="material-symbols-rounded">account_circle</span><span class="nav__text">Profile</span></a></li>
+			<li><a href="sitemap.html"><span class="material-symbols-rounded">lan</span><span class="nav__text">Sitemap</span></a></li>
+			<li><a href="feedback.html"><span class="material-symbols-rounded">chat</span><span class="nav__text">Comments</span></a></li>
+			<li><a href="team.html"><span class="material-symbols-rounded">info</span><span class="nav__text">About Us</span></a></li>
+
+			<!-- Change color, font size and font family of the page -->
+			<li style="float: right">
+				<select name="list" onchange="bgcolor(this.value)">
+					<option value="" selected>Black</option>
+					<option value="orange">Orange</option>
+					<option value="Green">Green</option>
+					<option value="#67C6E3">Blue</option>
+					<option value="#8C6A5D">Brown</option>
+				</select>
+
+				<select id="font-size-selector" onchange="changeFontSize(this.value)">
+					<option value="0.6em">Small</option>
+					<option value="1.0em" selected>Medium</option>
+					<option value="1.25em">Large</option>
+				</select>
+
+				<select id="font-family-selector" onchange="changeFontFamily(this.value)">
+					<option value="'Roboto', sans-serif" selected>Roboto</option>
+					<option value="'Times New Roman', serif">Times New Roman</option>
+					<option value="Courier New", monospace>Monospace</option>
+					<option value="Brush Script MT", cursive;>Cursive</option>
+				</select>
+			</li>
+        </ul>
+    </nav>
+	<div class="cursor rounded move" id="cursor"></div>  <!-- Cursor of the Document -->
+
+    
+    <!-- Main Content of the Document -->
+<div class="slider">
+
+		<!-- Heading for the gallery section -->
+		<h1 class="slider-heading">Gallery</h1>
+		<div class="list">
+
+			<!-- Image items for the slider -->
+			<div class="item">
+				<img src="resources/images/gallery/banner19.jpg">
+			</div>
+			<div class="item">
+				<img src="resources/images/gallery/banner3.jpg">
+			</div>
+			<div class="item">
+				<img src="resources/images/gallery/banner15.jpg">
+			</div>
+			<div class="item">
+				<img src="resources/images/gallery/banner1.jpg">
+			</div>
+			<div class="item">
+				<img src="resources/images/gallery/banner17.jpg">
+			</div>
+			<div class="item">
+				<img src="resources/images/gallery/banner14.jpg">
+			</div>
+			
+		</div>
+
+		<!--button prev and next-->
+		<div class="buttons">
+			<button id="prev"><</button>
+			<button id="next">></button>
+		</div>
+
+		<!--dots(if 6 items =>6 dots)-->
+		<ul class="dots">
+			<li class="active"></li>
+			<li></li>
+			<li></li>
+			<li></li>
+			<li></li>
+			<li></li>
+		</ul>
+	</div>
+
+	<!--* Row 1 gallery card *-->
+
+	<div class="wrapper">
+
+		<!-- Card items with image and information -->
+		<div class="card">
+			<img src="resources/images/gallery/image1.jpeg" alt="">
+			<div class="info">
+				<h1>The Biggest Mammel On Land</h1>
+				<p>African Elephants</p>
+				<a href="#" class="btn">Read More</a>
+			</div>
+		</div>
+		<div class="card">
+			<img src="resources/images/gallery/image2.jpeg" alt="">
+			<div class="info">
+				<h1>Bride of the Birds</h1>
+				<p>Macaws</p>
+				
+				<a href="#" class="btn">Read More</a>
+			</div>
+		</div>
+		<div class="card">
+			<img src="resources/images/gallery/image3.jpeg" alt="">
+			<div class="info">
+				<h1>Sustainable Agriculture</h1>
+				<p>Vibrant and adaptable, Grapes</p>
+				<a href="#" class="btn">Read More</a>
+			</div>
+		</div>
+		<div class="card">
+			<img src="resources/images/gallery/image4.jpeg" alt="">
+			<div class="info">
+				<h1>Heaven on Earth</h1>
+				<p>Forests,Lakes,Mountains,Rivers..</p>
+				<a href="#" class="btn">Read More</a>
+			</div>
+		</div>
+		<div class="card">
+			<img src="resources/images/gallery/image5.jpeg" alt="">
+			<div class="info">
+				<h1>The Large Cats</h1>
+				<p>Tigers</p>
+				<a href="#" class="btn">Read More</a>
+			</div>
+		</div>
+		
+	</div>	
+
+	<!-- Popup overlay for Row 1 -->
+
+    <div id="popup-overlay">
+		<div id="popup-content">
+			<span id="close-popup">&times;</span>
+			<div id="popup-image"></div>
+			<h2 id="popup-title"></h2>
+			<p id="popup-description"></p>
+		</div>
+	</div>
+
+
+	<!--* Row 2 gallery card *-->
+
+	<div class="headers">
+		<h1>Biodiversity</h1>
+	</div>
+
+	<div class="wrapper">
+		<div class="card">
+			<img src="resources/images/gallery/image6.jpeg" alt="">
+			<div class="info">
+				<h1>Red Panda</h1>
+				<p>Native to the Eastern Himalayas, red pandas live lonely lives in..</p>
+				<a href="#" class="btn2">Read More</a>
+			</div>
+		</div>
+		<div class="card">
+			<img src="resources/images/gallery/image7.jpeg" alt="">
+			<div class="info">
+				<h1>Robins</h1>
+				<p>Common across Europe, Asia, and North America, robins are distinguished by their..</p>
+				
+				<a href="#" class="btn2">Read More</a>
+			</div>
+		</div>
+		<div class="card">
+			<img src="resources/images/gallery/image8.jpeg" alt="">
+			<div class="info">
+				<h1>Giant panda</h1>
+				<p>Pandas live in China's bamboo forests and are well-known conservationists. They are..</p>
+				<a href="#" class="btn2">Read More</a>
+			</div>
+		</div>
+		<div class="card">
+			<img src="resources/images/gallery/image9.jpeg" alt="">
+			<div class="info">
+				<h1>Emperor Penguin</h1>
+				<p>Antarctic symbol, the emperor penguin, can withstand temperatures as low as -40°C. They are..</p>
+				<a href="#" class="btn2">Read More</a>
+			</div>
+		</div>
+		<div class="card">
+			<img src="resources/images/gallery/image10.jpeg" alt="">
+			<div class="info">
+				<h1>The Butterflies</h1>
+				<p>The fantastic transformation process butterflies undergo is..</p>
+				<a href="#" class="btn2">Read More</a>
+			</div>
+		</div>
+		
+	</div>	
+
+		<!-- Popup for Row 2 -->
+	<div id="popup-overlay2">
+		<div id="popup-content2">
+			<span id="close-popup2">&times;</span>
+			<div id="popup-image2"></div>
+			<h2 id="popup-title2"></h2>
+			<p id="popup-description2"></p>
+		</div>
+	</div>
+
+	<!--* Row 3 gallery card *-->
+
+	<div class="headers">
+		<h1>Nature</h1>
+	</div>
+
+	<div class="wrapper">
+		<div class="card">
+			<img src="resources/images/gallery/image11.jpeg" alt="">
+			<div class="info">
+				<h1>Landscapes and Geography</h1>
+				<p>The physical characteristics of the Earth's surface, such as mountains, plains, rivers, and..</p>
+				<a href="#" class="btn3">Read More</a>
+			</div>
+		</div>
+		<div class="card">
+			<img src="resources/images/gallery/image12.jpeg" alt="">
+			<div class="info">
+				<h1>Climate and Weather</h1>
+				<p>An essential component of nature, climate and weather shape ecosystems and..</p>
+				
+				<a href="#" class="btn3">Read More</a>
+			</div>
+		</div>
+		<div class="card">
+			<img src="resources/images/gallery/image13.jpeg" alt="">
+			<div class="info">
+				<h1>Ecology and Ecosystems</h1>
+				<p>Ecology studies interactions between living things and their surroundings, focusing on..</p>
+				<a href="#" class="btn3">Read More</a>
+			</div>
+		</div>
+		<div class="card">
+			<img src="resources/images/gallery/image14.jpeg" alt="">
+			<div class="info">
+				<h1>Flora and Fauna</h1>
+				<p>Nature's flora and fauna represent the enormous diversity of plant and animal life in..</p>
+				<a href="#" class="btn3">Read More</a>
+			</div>
+		</div>
+		
+	</div>	
+
+		<!-- Popup for Row 3 -->
+	<div id="popup-overlay3">
+		<div id="popup-content3">
+			<span id="close-popup3">&times;</span>
+			<div id="popup-image3"></div>
+			<h2 id="popup-title3"></h2>
+			<p id="popup-description3"></p>
+		</div>
+	</div>
+
+
+	<!--* Row 4 gallery card *-->
+
+	<div class="headers">
+		<h1>Sustainable Agriculture</h1>
+	</div>
+
+	<div class="wrapper">
+		<div class="card">
+			<img src="resources/images/gallery/image15.jpeg" alt="">
+			<div class="info">
+				<h1>Agroecology</h1>
+				<p>One of the cornerstones of sustainable agriculture is agroecology, which incorporates..</p>
+				<a href="#" class="btn4">Read More</a>
+			</div>
+		</div>
+		<div class="card">
+			<img src="resources/images/gallery/image22.jpg" alt="">
+			<div class="info">
+				<h1>Soil Health</h1>
+				<p>In sustainable agriculture, soil health is essential for maintaining and improving soil quality..</p>
+				
+				<a href="#" class="btn4">Read More</a>
+			</div>
+		</div>
+		<div class="card">
+			<img src="resources/images/gallery/image17.jpeg" alt="">
+			<div class="info">
+				<h1>Crop Diversity</h1>
+				<p>In sustainable agriculture, crop diversity is the practice of growing a variety of plant species..</p>
+				<a href="#" class="btn4">Read More</a>
+			</div>
+		</div>
+		<div class="card">
+			<img src="resources/images/gallery/image18.jpeg" alt="">
+			<div class="info">
+				<h1>Water Management</h1>
+				<p>To maintain agricultural output while minimising environmental impact, water management..</p>
+				<a href="#" class="btn4">Read More</a>
+			</div>
+		</div>
+		<div class="card">
+			<img src="resources/images/gallery/image16.jpeg" alt="">
+			<div class="info">
+				<h1>Community Engagement</h1>
+				<p>In sustainable agriculture, community involvement entails farmers, local communities, and..</p>
+				<a href="#" class="btn4">Read More</a>
+			</div>
+		</div>
+		
+	</div>	
+
+		<!-- Popup for Row 4 -->
+	<div id="popup-overlay4">
+		<div id="popup-content4">
+			<span id="close-popup4">&times;</span>
+			<div id="popup-image4"></div>
+			<h2 id="popup-title4"></h2>
+			<p id="popup-description4"></p>
+		</div>
+	</div>
+
+	<!--* Row 5 gallery card *-->
+
+	<div class="headers">
+		<h1>Reforestation</h1>
+	</div>
+
+	<div class="wrapper">
+		<div class="card">
+			<img src="resources/images/gallery/image20.jpeg" alt="">
+			<div class="info">
+				<h1>Ecological Restoration</h1>
+				<p>By restoring native tree species, encouraging natural regeneration, and creating habitat..</p>
+				<a href="#" class="btn5">Read More</a>
+			</div>
+		</div>
+		<div class="card">
+			<img src="resources/images/gallery/image23.jpg" alt="">
+			<div class="info">
+				<h1>Climate Change Mitigation</h1>
+				<p>Climate Change Caused by Reforestation Planting trees to absorb carbon dioxide from the..</p>
+				<a href="#" class="btn5">Read More</a>
+			</div>
+		</div><div class="card">
+			<img src="resources/images/gallery/image24.jpg" alt="">
+			<div class="info">
+				<h1>Water Resource Management</h1>
+				<p>Reforestation contributes to water resource management by improving availability, quality, and regulation..</p>
+				<a href="#" class="btn5">Read More</a>
+			</div>
+		</div><div class="card">
+			<img src="resources/images/gallery/image25.jpg" alt="">
+			<div class="info">
+				<h1>Socio-Economic Benefits</h1>
+				<p>The socio-economic benefits of reforestation go beyond ecological restoration to include..</p>
+				<a href="#" class="btn5">Read More</a>
+			</div>
+		</div><div class="card">
+			<img src="resources/images/gallery/image26.jpg" alt="">
+			<div class="info">
+				<h1>Biodiversity Conservation</h1>
+				<p>Because reforestation restores habitats for various plant and animal species, it is essential..</p>
+				<a href="#" class="btn5">Read More</a>
+			</div>
+		</div>
+	</div>	
+
+		<!-- Popup for Row 5 -->
+	<div id="popup-overlay5">
+		<div id="popup-content5">
+			<span id="close-popup5">&times;</span>
+			<div id="popup-image5"></div>
+			<h2 id="popup-title5"></h2>
+			<p id="popup-description5"></p>
+		</div>
+	</div>
+	
+
+    <!-- Footer Section of the Document -->
+	<div id="footer">
+		<div class="footer__container">
+			<div class="animate" id="dev">
+				<a href="subpages/rehan-info.html"><img src="resources/images/developers/rehan.jpg" alt="Rehan Godakumbura"><span>Rehan Godakumbura (Contributor)</span></a>
+			</div>
+			<div class="footer__container__left">
+				<h3>Life on Land</h3>
+				<p>&copy; Life on Land is a collaborative website built by a group of students from IIT - 2024</p>
+			</div>
+			<div class="footer__container__right">
+				<h3>Contact Us</h3>
+				<ul>
+					<li><a href="mailto:lashenmartino@gmail.com">Email</a></li>
+					<li><a href="https://www.facebook.com/lashen.martino">Facebook</a></li>
+                    <li><a href="https://twitter.com/LashenMartino?s=09">Twiter</a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+
+	<!-- JavaScript files -->
+	<script src="js/gallery.js"></script>
+	<script src="js/cursor.js"></script>
+	
+</body>
+
+</html>
