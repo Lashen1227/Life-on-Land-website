@@ -30,18 +30,15 @@ h1{
 
 
 /* Styles for the img element */
-img{
+.rehanimg{
     width: 30%;
     height: 30%;
     border-radius: 2.5%;
-    padding-left: 50px;
- 
-    
+    margin-left: 7%;
 }
 
 /* Styles for the name class */
 .name  {
-   
     padding-left: 250px;
     position: absolute;
     top: 80px;
