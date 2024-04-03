@@ -1,13 +1,12 @@
 
 /* Background image settings */
-.map_body{
-    background-image: url(../resources/images/sitemap/banner7.jpg);
+body{
+    /* background-image: url(../resources/images/sitemap/banner7.jpg); */
+    background-image: repeating-linear-gradient(135deg, rgb(0,0,0) 0px, rgb(0,0,0) 10px,transparent 10px, transparent 11px),repeating-linear-gradient(22.5deg, rgb(0,0,0) 0px, rgb(0,0,0) 10px,transparent 10px, transparent 11px),linear-gradient(90deg, hsl(194,74%,56%),hsl(266,74%,56%),hsl(338,74%,56%),hsl(50,74%,56%),hsl(122,74%,56%));
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-position: center;
-    backdrop-filter: blur(100%);  /* Apply backdrop filter for blur effect */
-    filter: blur(0.5px);
 }
 
 /* Styles for the map container */
