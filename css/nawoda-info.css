@@ -56,3 +56,55 @@ h1{
     border-width: 3px;
     border-style: solid;
 }
+
+
+/* Media queries */
+@media screen and (max-width: 768px) {
+    .container {
+        width: 80%; /* Adjust width for smaller screens */
+    }
+
+    .contribute {
+        width: 90%; /* Adjust width for smaller screens */
+        padding: 3%; /* Adjust padding for smaller screens */
+    }
+
+    .name,
+    .student,
+    .play {
+        font-size: 1.2rem; /* Adjust font size for smaller screens */
+    }
+
+    .editorImage {
+        width: 150px; /* Adjust editor image width for smaller screens */
+    }
+
+    img{
+        height: auto;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .container {
+        width: 90%; /* Further adjust width for even smaller screens */
+    }
+
+    .contribute {
+        width: 100%; /* Adjust width for even smaller screens */
+        padding: 2%; /* Adjust padding for even smaller screens */
+    }
+
+    .name,
+    .student,
+    .play {
+        font-size: 1rem; /* Further adjust font size for even smaller screens */
+    }
+
+    .editorImage {
+        width: 120px; /* Further adjust editor image width for even smaller screens */
+    }
+
+    img{
+        height: auto;
+    }
+}

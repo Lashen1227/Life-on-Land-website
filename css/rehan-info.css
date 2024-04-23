@@ -78,3 +78,18 @@ h1{
     margin-top: 1%;
     font-size: 1.5rem;
 }
+
+/* Media queries */
+@media screen and (max-width: 768px) {
+    .container {
+        width: 80%; /* Adjust width for smaller screens */
+    }
+
+    .name,
+    .student,
+    .play {
+        padding-left: 20px; /* Adjust padding for smaller screens */
+        position: relative; /* Remove absolute positioning */
+        top: auto; /* Remove top positioning */
+    }
+}
